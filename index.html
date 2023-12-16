@@ -22,9 +22,3 @@
     </script>
 </body>
 </html>
-fetch('https://yoursite.netlify.app/.netlify/functions/log-ip')
-  .then(response => response.json())
-  .then(data => {
-    console.log('Server Response:', data);
-  })
-  .catch(error => console.error('Error:', error));
