@@ -11,7 +11,7 @@
     <!-- Include a script to make a request to the Netlify function -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            fetch('/.netlify/functions/logger-ip')
+            fetch('https://app.netlify.com/sites/ahmedsfirstwebsite/functions/logger-ip')
                 .then(response => response.json())
                 .then(data => {
                     console.log('Server Response:', data);
@@ -22,3 +22,9 @@
     </script>
 </body>
 </html>
+fetch('https://yoursite.netlify.app/.netlify/functions/log-ip')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Server Response:', data);
+  })
+  .catch(error => console.error('Error:', error));
